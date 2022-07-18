@@ -1,0 +1,66 @@
+# GRUB2 gfxmenu Linux theme
+# Designed for any resolution
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Terminus  Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+message-font: "Terminus Regular 14"
+message-color:"#fd262e"
+
++ label {
+   text = "Choose an Operating System"
+   font = "DroidLogo Bold 20"
+   color = "#eff0f1"
+   left = 53%-190
+   top = 10%
+   height = 30
+   width = 400
+   align = "center"
+}
+
+
+# Show the boot menu
++ boot_menu {
+  left = 43%
+  top = 29%
+  width = 22%
+  height = 37%
+  item_font = "Terminus Regular 12"
+  item_color = "#cccccc"
+  selected_item_color = "#ffffff"
+  selected_item_font = "DroidLogo Regular 17"
+  icon_width = 16
+  icon_height = 16
+  item_icon_space = 20
+  item_height = 33
+  item_padding = 5
+  item_spacing = 7
+  selected_item_pixmap_style = "select_*.png"
+  scrollbar =  true
+  scrollbar_width=21
+  scrollbar_thumb="slider_*.png"
+}
+# Show progress
++ progress_bar {
+  left = 32%
+  top = 93%
+  height = 30
+  width = 54%+7
+  font = "Terminus Regular 12"
+  id = "__timeout__"
+  text = "Automatically booting in %d seconds"
+  text_color = "gainsboro"
+  bar_style = "progress_frame_*.png"
+  highlight_style = "progress_highlight_*.png"
+  SHOw_text = true
+  bar_style = "progress_frame_*.png"
+  highlight_style = "progress_highlight_*.png"
+}
